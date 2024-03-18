@@ -1,0 +1,109 @@
+A/B Testing Procedure
+
+1.  Problem Statement
+    What is the goal of the experiment
+
+2. Hypothesis Testing
+    What results do you hypothesize from the experiment?
+
+3. Design the Experiment
+    What are your experiment parameters?
+
+4. Run the Experiment
+    What are the requirements for running an experiment?
+
+5. Validity Check
+    Did the experiment run soundly without errors or bias?
+
+6 Interpret results
+    In which direction is the metric significant statistically and practically?
+
+7. Launch Decision
+    Based on the results and trade-offs, should the change launch?
+
+################## EXAMPLE PROBLEM ##############################
+
+1. Suppose that an online clothing store called FashinWebStore wants to Test
+a new ranking algo to provide products more relevant to customers. How would you Design
+the experiment?
+
+STEPS:
+1. Problem Statement
+ - Talk about the Business goal first
+ - User journey
+    - Understand how users interact with our website or products
+    - Product experience we are trying to change
+    EX
+        - User -> Searcher an item -> Browse items -> Views and item -> Purchase
+    Why is this important?
+        - At what stage is the user a participant in the experiment?
+        - MUST DO - Visit the platform and create an outline
+
+    SUCCESS METRIC 
+        - What do we need to move or change to determine if it is successful?
+            1. Measurable
+                - Can the behavior be tracked using the data you collected from users?
+            2. Attributable
+                - Can you assign the behavior (effect) to the treatment (cause)? Does it explain the causal effect?
+            3. Sensitive
+                - Does the metric have low variability that you can distinguish the treatment from control?
+            4. Timely
+                - Can you measure the success behavior in the short term?
+            5. Revenue Per DAY Per User
+
+2. Hypothesis Testing
+    a. Setting up the Test
+        - Null Hypothesis: The average revenue per day per user between the baseline and variant ranking algorithms are the Statement
+        - Alternative Hypothesis: The average revenue per day per user between the baseline and variant ranking algorithms are different.
+    b. Set the significance level
+        - alpha value 0.5
+        - decision threshold
+        - P(type 1 error)
+    c. Set the statistical power
+        - statistical power: 0.80
+        - The probability of detecting an effect if the alternative Hypothesis is true
+    d. Set the minimum detectable effect (MDE)
+        - if the change is at least 1% higher in revenue per day per user then it is practically significant
+        
+3. Design the Experiment
+    a. Set the randomization unit
+        - Randamizaton unit: User
+    b. Target population in the experiment
+        - Users: Visitors who search for product
+        - User experience in the experiment, what level?
+        - Ex. Once they searched for a product
+    c. Determine the sample size
+        - n = 16 variance/delta where delta is the difference between the treatment and the control.
+    d. Duration of experiment
+        - 1-2 weeks
+        - day of the week affect
+4. Run the Experiment
+    a. Set up instruments and data pipelines to collect data
+    b. Avoid peeking p-values as it can
+
+5. Validity Checks
+    a. Checks for bugs, glitches
+    b. External factors: Holidays, competition, economic disruptions
+    c. Selection Bias: Homogeneous run an A/A Test
+        - Compare the identical experience on a different random set of users
+    d. Sample Ratio Mismatch: Chi-square Goodness of Fit Test
+    e. Novelty Effect: Segment by new and old Visitors
+        - detection: Segment by new and old visitors. If there is a change then there is a presence of Novelty effect.
+6. Interpret results
+    a. Is the success metric statistically significant vs practically
+    b. Confidence interval
+    c. Reject the null Hypothesis
+7. Launch the experiment
+    a. Metric Trade-offs:
+        - Primary metrics may improve but secondary metrics may decline
+    b. Cost of launching
+        - Launching and maintaining the change across the users might be costly
+    c. False Positive: 
+        
+
+
+
+
+
+
+    
