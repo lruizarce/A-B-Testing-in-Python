@@ -24,7 +24,7 @@ A/B Testing Procedure
 ################## EXAMPLE PROBLEM ##############################
 
 1. Suppose that an online clothing store called FashinWebStore wants to Test
-a new ranking algorithms to provide products more relevant to customers. How would you Design
+new ranking algorithms to provide products more relevant to customers. How would you Design
 the experiment?
 
 STEPS:
@@ -77,6 +77,7 @@ STEPS:
     d. Duration of experiment
         - 1-2 weeks
         - day of the week affect
+
 4. Run the Experiment
     a. Set up instruments and data pipelines to collect data
     b. Avoid peeking p-values as it can
@@ -89,10 +90,12 @@ STEPS:
     d. Sample Ratio Mismatch: Chi-square Goodness of Fit Test
     e. Novelty Effect: Segment by new and old Visitors
         - detection: Segment by new and old visitors. If there is a change then there is a presence of Novelty effect.
+
 6. Interpret results
     a. Is the success metric statistically significant vs practically
     b. Confidence interval
     c. Reject the null Hypothesis
+    
 7. Launch the experiment
     a. Metric Trade-offs:
         - Primary metrics may improve but secondary metrics may decline
