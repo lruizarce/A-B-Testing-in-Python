@@ -24,7 +24,7 @@ A/B Testing Procedure
 ################## EXAMPLE PROBLEM ##############################
 
 1. Suppose that an online clothing store called FashinWebStore wants to Test
-a new ranking algo to provide products more relevant to customers. How would you Design
+a new ranking algorithms to provide products more relevant to customers. How would you Design
 the experiment?
 
 STEPS:
