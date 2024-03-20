@@ -106,7 +106,29 @@ STEPS:
 
 
 
+#### Trustworthy Online Controlled Experiments ###
 
+### Chapter 1 ###
+- Online Controlled Experiments Terminology
+    - Overall Evaluation Criterion (OEC): A quantitative measure of the experiment's objective.
+    For example, your OEC might be active days per user, indicating the number of days during
+    the experiment that users were active.  
+    - The OEC must be measurable in the short term and believed to causally drive long-term 
+    strategic objectives. 
+- Parameter
+    - A controllable experimental variable that is thought to influence the OEC or other metrics
+    of interest. Parameters are sometimes called factors or variables. Parameters are assigned
+    values, also called levels. In a simple A/B test, there is commonly a single parameter with 
+    two values. 
+- Variant
+    - A user experience being tested, typically by assigning values to parameters. In a simple A/B 
+    test, A and B are two variants, usually called Control and Treatment. 
+- Randomization unit
+    - A pseudo-randomization process is applied to units to map them to variants. Proper randomization
+    is important to ensure that the populations assigned to the different variants are similar statistically,
+    allowing causal effects to be determined with high probability. 
+    
+    
 
 
     
